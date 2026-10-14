@@ -218,15 +218,14 @@ export const INITIAL_SERVICES: ServiceItem[] = [
 ];
 
 // AUTHENTIC SALON-SPECIFIC GALLERY IMAGES
-// Strictly showing real in-salon hair coloring, haircutting in progress, bridal makeup detailing, barbering, and salon interior.
+// Real in-salon hair coloring, bridal artistry, barbering, skincare, and interior
 export const INITIAL_GALLERY: GalleryItem[] = [
   {
     id: 'gal-1',
     title: 'Dimensional Honey Balayage & Silk Waves',
     category: 'color',
     categoryLabel: 'Color & Balayage',
-    // Actual back-view showing multi-tone balayage gradient ribbons on long waves
-    image: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1000&q=85',
+    image: '/images/balayage.jpg',
     description: 'Hand-painted warm caramel and honey dimension ribbons blended seamlessly from a soft espresso root melt.',
     stylingNotes: ['Foilayage Ribbon Technique', 'Italian Acidic Gloss Toner', 'Zero Harsh Demarcation']
   },
@@ -235,70 +234,45 @@ export const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Heritage Royal Bridal Artistry & Jewelry Setting',
     category: 'bridal',
     categoryLabel: 'Bridal Artistry',
-    // Detailed South Asian bridal makeup with traditional jewelry, dupatta, and sculpted eyes
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1000&q=85',
+    image: '/images/bridal.jpg',
     description: 'Sculpted winged liner, velvet crimson lips, and reinforced antique Kundan jewelry anchoring for Baraat celebrations.',
     stylingNotes: ['Longwear HD Base', 'Custom Mink Lashes', 'Dupatta Anchor Pinning']
   },
   {
     id: 'gal-3',
-    title: 'In-Salon Precision Scissor Cut & Styling',
-    category: 'hair',
-    categoryLabel: 'Haircuts & Styling',
-    // Stylist in salon actively working with comb and shears on client's hair
-    image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1000&q=85',
-    description: 'Precision perimeter blunt cut with dry texturizing in a salon chair for natural movement and face framing.',
-    stylingNotes: ['Dry Texturizing Shears', 'Ceramic Thermal Prep', 'Featherlight Volume']
-  },
-  {
-    id: 'gal-4',
-    title: 'Barber Fade & Straight Razor Beard Sculpt',
+    title: 'Executive Barber Fade & Beard Sculpting',
     category: 'grooming',
     categoryLabel: "Men's Grooming",
-    // Barber in classic barber chair detailing fade and beard line
-    image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=85',
-    description: 'Crisp low skin taper fade with razor-sculpted cheek contours and warm sandalwood beard conditioning.',
+    image: '/images/barber.jpg',
+    description: 'Precision low fade with razor-sculpted cheek lines, hot towel preparation, and sandalwood beard oil finish.',
     stylingNotes: ['Straight Razor Detailing', 'Hot Towel Steam', 'Matte Clay Hold']
   },
   {
+    id: 'gal-4',
+    title: '24K Cellular Radiance Facial & Gold Leaf Care',
+    category: 'skincare',
+    categoryLabel: 'Facials & Skincare',
+    image: '/images/skincare.jpg',
+    description: 'Medical aesthetician applying pure cosmetic 24K gold foil and ultrasound peptide hydration in treatment suite.',
+    stylingNotes: ['Pure 24K Gold Foil', 'Lymphatic Drainage', 'Barrier Repair']
+  },
+  {
     id: 'gal-5',
-    title: 'Walima Reception Soft Glam & Glass Skin',
-    category: 'bridal',
-    categoryLabel: 'Bridal Artistry',
-    // Detailed close-up makeup showing eyeshadow, highlighter, and soft lip
-    image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1000&q=85',
-    description: 'Luminous champagne pearl lids, glass-skin skin prep, and romantic bridal half-updo for modern receptions.',
-    stylingNotes: ['Hyaluronic Plumping Base', 'Soft Rose Pearl Glow', 'Waterproof Setting Matrix']
-  },
-  {
-    id: 'gal-6',
-    title: 'Modern Classic Scissor Fade & Hot Shave',
-    category: 'grooming',
-    categoryLabel: "Men's Grooming",
-    // Barber applying foam and precision straight razor detail
-    image: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1000&q=85',
-    description: 'Traditional hot foam straight razor lather with lavender steam towels and clean modern textured scissor crop.',
-    stylingNotes: ['Double-Pass Razor Work', 'Lavender Towel Wrap', 'Cooling Balm Pore Seal']
-  },
-  {
-    id: 'gal-7',
-    title: 'Sanctuary Atelier Interior & Styling Stations',
+    title: 'Atelier Interior & Backlit Styling Vanities',
     category: 'interior',
     categoryLabel: 'Salon Interior',
-    // High-end salon interior showing mirrors, chairs, and styling stations
-    image: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=85',
-    description: 'Warm ivory vanity spaces, champagne gold brass mirrors, and private consultation dressing chambers.',
+    image: '/images/interior.jpg',
+    description: 'Warm ivory vanity spaces, champagne gold brass arched mirrors, and private consultation dressing chambers.',
     stylingNotes: ['Glare-Free Ring Lighting', 'Ergonomic Hydraulic Chairs', 'Acoustic Calm']
   },
   {
-    id: 'gal-8',
-    title: 'Balayage Foil Highlighting In-Progress',
-    category: 'color',
-    categoryLabel: 'Color & Balayage',
-    // Colorist actively applying bleach / foil foils in salon
-    image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=85',
-    description: 'Section-by-section freehand painting and micro-foiling with bond-multiplier protection.',
-    stylingNotes: ['Plex Bond Multiplier', 'Feathered Root Blend', 'Anti-Brass Neutralizer']
+    id: 'gal-6',
+    title: 'Signature Salon Styling & Consultation',
+    category: 'hair',
+    categoryLabel: 'Haircuts & Styling',
+    image: '/images/hero.jpg',
+    description: 'Face-framing silk blowout waves following a personalized hair health and density consultation.',
+    stylingNotes: ['Face Contour Mapping', 'Thermal Ceramic Silk Press', 'Weightless Hold']
   }
 ];
 

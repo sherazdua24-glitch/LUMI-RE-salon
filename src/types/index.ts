@@ -24,7 +24,7 @@ export interface ServiceItem {
 export interface GalleryItem {
   id: string;
   title: string;
-  category: 'all' | 'hair' | 'color' | 'bridal' | 'grooming' | 'interior';
+  category: 'all' | 'hair' | 'color' | 'bridal' | 'grooming' | 'skincare' | 'interior';
   categoryLabel: string;
   image: string;
   description: string;

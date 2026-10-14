@@ -21,6 +21,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
     { key: 'color', label: 'Color & Balayage' },
     { key: 'hair', label: 'Haircuts & Styling' },
     { key: 'bridal', label: 'Bridal Artistry' },
+    { key: 'skincare', label: 'Facials & Skincare' },
     { key: 'grooming', label: "Men's Grooming" },
     { key: 'interior', label: 'Salon Interior' },
   ];
