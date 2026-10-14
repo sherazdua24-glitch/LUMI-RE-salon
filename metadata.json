@@ -1,0 +1,8 @@
+{
+  "name": "Lumière Studio — Your Style. Your Signature.",
+  "description": "Lumière Studio is a luxury salon and grooming atelier demo featuring bespoke hair couture, dimensional balayage, skincare facials, bridal artistry, and men's grooming with customizable PKR pricing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
